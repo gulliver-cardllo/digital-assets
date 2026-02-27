@@ -70,37 +70,6 @@ bool win()
 	}
 	}
 	
-	static void goback(){
-		Console.WriteLine("Enter 'BACK' To return to menu");
-		Console.WriteLine("---------");
-		string userback = Console.ReadLine();
-		switch(userback.ToUpper()){
-			case "BACK":
-				Main();
-				break;
-			default:
-				Console.WriteLine("Inavlid Input");
-				break;
-		
-		}
-		
-		
-		}
-	static void playTTT()
-	{
-		string[,] columns = {{"1", "2", "3"}, 
-							 {"4", "5", "6"},
-						 	{"7", "8", "9"}};
-		for(int i = 0; i < 3; i++){
-			string res = "";
-		for (int j = 0; j < 3; j++){
-			res += "|" + columns[i,j] + "|";
-	}
-			Console.WriteLine(res);
-			Console.WriteLine("---------");
-		}
-}
-
 
 	static void playRPS()
 	{ 
