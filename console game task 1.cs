@@ -2,7 +2,7 @@ using System;
 
 
 
-public partial class Program
+public class Program
 {
 	
 	static void tictactoe(){
@@ -23,7 +23,7 @@ while (!win() && turns != 9){ //ends while loop apon win or if turns reach 9 whi
     string choice = Console.ReadLine();
 	
     if(grid.Contains(choice) && choice != "X" && choice != "O"){
-		int gridInt = Convert.ToInt32(choice) - 1;
+		int gridInt = int.Parse(choice) - 1;
         if (player1turn)
         grid[gridInt] = "X";
         else 
